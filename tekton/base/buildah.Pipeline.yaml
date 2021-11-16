@@ -16,7 +16,7 @@ spec:
       type: string
       description: Docker image repository
   tasks:
-    - name: fetch-repository
+    - name: clone-repository
       taskRef:
         name: git-clone
         kind: ClusterTask
