@@ -16,7 +16,7 @@ spec:
       type: string
       description: Docker image repository
   tasks:
-    - name: clone-repository
+    - name: fetch-repository
       taskRef:
         name: git-clone
         kind: ClusterTask
@@ -58,7 +58,7 @@ spec:
         - name: source-repo
           value: $(params.github-repo)
         - name: commit
-          value: "$(tasks.clone-repository.results.commit)"
+          value: "$(tasks.fetch-repository.results.commit)"
         - name: image-repo
           value: "$(params.image-repo)"
       runAfter:
