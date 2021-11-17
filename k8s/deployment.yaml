@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: express-sample-app
+  name: bootcamp-app
 spec:
   replicas: 1
   selector:
