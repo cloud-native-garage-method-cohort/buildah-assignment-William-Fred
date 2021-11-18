@@ -7,7 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const port = process.env.PORT || 8000;
-const server = http.createServer(app);
+
 
 var app = express();
 
